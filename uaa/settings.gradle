@@ -1,0 +1,11 @@
+rootProject.name = 'cloudfoundry-identity-parent'
+include ':cloudfoundry-identity-common'
+include ':cloudfoundry-identity-scim'
+include ':cloudfoundry-identity-login'
+include ':cloudfoundry-identity-uaa'
+
+
+project(':cloudfoundry-identity-common').projectDir = "$rootDir/common" as File
+project(':cloudfoundry-identity-scim').projectDir = "$rootDir/scim" as File
+project(':cloudfoundry-identity-login').projectDir = "$rootDir/login" as File
+project(':cloudfoundry-identity-uaa').projectDir = "$rootDir/uaa" as File
